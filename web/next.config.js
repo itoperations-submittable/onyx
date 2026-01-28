@@ -81,19 +81,19 @@ const nextConfig = {
       {
         source: "/api/docs/:path*", // catch /api/docs and /api/docs/...
         destination: `${
-          process.env.INTERNAL_URL || "http://localhost:8080"
+          process.env.INTERNAL_URL || "http://onyx-backend.railway.internal:8080"
         }/docs/:path*`,
       },
       {
         source: "/api/docs", // if you also need the exact /api/docs
         destination: `${
-          process.env.INTERNAL_URL || "http://localhost:8080"
+          process.env.INTERNAL_URL || "http://onyx-backend.railway.internal:8080"
         }/docs`,
       },
       {
         source: "/openapi.json",
         destination: `${
-          process.env.INTERNAL_URL || "http://localhost:8080"
+          process.env.INTERNAL_URL || "http://onyx-backend.railway.internal:8080"
         }/openapi.json`,
       },
     ];
